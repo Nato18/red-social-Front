@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    basURL: process.env.VUE_APP_API_HOST
+    baseURL: process.env.VUE_APP_API_HOST
 });
 
 
