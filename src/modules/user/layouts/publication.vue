@@ -46,7 +46,7 @@ export default{
     mounted(){
 
          this.alltweets();
-         this.socket = io('http://localhost:3525');
+         this.socket = io(import.meta.env.VITE_API_HOST);
          
          this.socket.on('newTweet', (newTweet) => {
             this.tweets.unshift(newTweet); // Agregar el nuevo tweet al principio de la lista
